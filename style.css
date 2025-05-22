@@ -177,7 +177,7 @@
     .description{
     
         white-space: nowrap;
-        font-size: calc(.8vw + .5vh + .8vmin);
+        font-size: calc(.9vw + .5vh + .8vmin);
         font-family: Arial, Helvetica, sans-serif;
     }
     
