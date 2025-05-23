@@ -91,6 +91,8 @@
     margin-top: -20vh;
 }
 
+ /* nakalink yung arch background tapos profile-img sa card, siguro mas maganda ata if nilagay na lang sa photoshop yung background instead gawin siya through css */
+
 .arch-background {
     outline: none;
     position: absolute;
@@ -157,8 +159,6 @@
     .card{
          
         max-width: 350px;
-        aspect-ratio: 3/4;
-        background: transparent;
         margin-left: 0;
         margin-top: -5rem;
     }
