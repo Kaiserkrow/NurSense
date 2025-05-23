@@ -1,4 +1,33 @@
-
+#navbar-icon{
+    width: 160px;
+    margin-left: 100px;
+}
+/*===================== utilityy class ===============================================*/
+.black{
+    color: black;
+}
+.dark-blue{
+    color: #008baf;
+}
+.no-margin{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #00c0ff;
+    padding: 1.2rem 0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.neg-margin-large{
+    margin-top: -3.5rem;
+    
+}
+.neg-margin-small {
+    margin-top: -1rem;
+}
+/* ============================================================= */
 
 #landing-page{
     width: 100%;
@@ -22,30 +51,12 @@
     font-size: 80px ;
     padding: 3rem 3rem 2rem 8rem;
 }
-.right-area{
-    width: 100%;
-}
-.navbar{
-    background-color: #00c0ff;
-    padding: 1.2rem 0;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-}
-.neg-margin-large{
-    margin-top: -3.5rem;
-    
-}
-.neg-margin-small {
-    margin-top: -1rem;
-}
-.icon{
-    width: 160px;
-    margin-left: 100px;
-}
+
+
+/* =================for responsive text =======================*/
 .description{
     white-space: nowrap;
-    font-size: calc(.9vw + .3vh + .8vmin);
+    font-size: calc(.9vw + .3vh + .8vmin);   
     font-family: Arial, Helvetica, sans-serif;
 }
 .about-description{
@@ -60,28 +71,53 @@
     font-family: "EB Garamond", serif;
     font-weight: 600;
 }
-.black{
-    color: black;
-}
-.dark-blue{
-    color: #008baf;
-}
-.no-margin{
-    margin: 0;
-    padding: 0;
+/* ========================================================== */
+
+.right-area{
+    width: 100%;
 }
 
-  .profile-img {
+
+.card {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+    aspect-ratio: 3/4;
+    background: transparent;
+    margin-left: 3rem;
+    margin-top: -20vh;
+}
+
+.arch-background {
+    outline: none;
+    position: absolute;
+    bottom: 0;
+    width: 65%;
+    margin: 0;
+    height: 55%;
+    background-color: #00aaff;
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
+    z-index: 0;
+}
+
+
+
+.profile-img {
     position: absolute;
     width: 100%;
     height: auto;
     bottom: 0;
-  }
+}
 
-  .profile-img img {
+.profile-img img {
     width: 100%;
+    height: 100%;
     object-fit: contain;
-  }
+    outline: none;
+}
 
 #download-btn{
     width: 450px;
@@ -93,38 +129,6 @@
 #download-btn-container:hover{
     filter:contrast(.8);
 }
-
-  .card {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 750px;
-    aspect-ratio: 3/4;
-    background: transparent;
-    margin-left: 3rem;
-    margin-top: -20vh;
-  }
-
-  .arch-background {
-    outline: none;
-    position: absolute;
-    bottom: 0;
-    width: 65%;
-    margin: 0;
-    height: 55%;
-    background-color: #00aaff;
-    border-top-left-radius: 50% 30%;
-    border-top-right-radius: 50% 30%;
-    z-index: 0;
-  }
-
-  .profile-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    outline: none;
-  }
 
   /* Responsive for larger (desktop) screens */
   @media (min-width: 300px) {
@@ -158,7 +162,6 @@
         margin-top: -5rem;
     }
     
-    
     .neg-margin-large{
         margin-top: -2rem;
     }
@@ -187,7 +190,7 @@
         font-family: "EB Garamond", serif;
         font-weight: 600;
     }
-    .icon{
+    #navbar-icon{
         
         margin: 0;
         padding: 0;
@@ -196,6 +199,7 @@
         margin-left: 2rem;
     }
   }
+
 
 @media (max-width: 770px){
     .navbar{
@@ -231,6 +235,8 @@
         margin-top: -7rem;
     }
 }
+
+/* for smaller phones */
 @media (max-width: 450px){
     #download-btn{
         width: 200px;
@@ -241,6 +247,8 @@
 }
 }
 
+
+/* for tablets */
  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .right-area{
         margin: 0 3rem;
