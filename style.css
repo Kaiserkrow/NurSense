@@ -77,6 +77,7 @@
     width: 100%;
 }
 
+/* FOR class "card" : kita ko ito sa stackoverflow pero di ko masyadong magets yung part na aspect ratio, kaya nagkaroon ng design ko ng negative margin tops, hindi ko ma-center yung card mismo */
 
 .card {
     border: none;
@@ -84,7 +85,7 @@
     justify-content: center;
     align-items: center;
     max-width: 750px;
-    aspect-ratio: 3/4;
+    aspect-ratio: 3/4; 
     background: transparent;
     margin-left: 3rem;
     margin-top: -20vh;
